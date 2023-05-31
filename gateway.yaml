@@ -10,14 +10,14 @@ cloud:
      locator:
         enable: true
     routes:
-    - id: ms-api-catalog
+    - id: api-catalog
       uri: lb://api-catalog
       predicates:
-        - Path=/api/v1/catalog/**
-    - id: ms-api-movie
+        - Path=/catalog/**
+    - id: api-movie
       uri: lb://api-movie
       predicates:
-        - Path=/api/v1/movies/**
+        - Path=/movies/**
 info:
   app:
     name: ${spring.application.name}
