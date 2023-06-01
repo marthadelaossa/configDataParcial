@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: api-catalog
+
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/movie-dev
@@ -13,9 +14,9 @@ spring:
     generate-ddl: true
     show-sql: true
 
-info:
-  application:
-    name: api-catalog
+    info:
+      application:
+        name: api-catalog
 
 eureka:
   instance:
