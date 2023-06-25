@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: api-catalog
+ 
+ datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/movie-dev
+    username: usr-movie
+    password: pwd-movie
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+   
   mongodb:
     embedded:
       version: 4.0.2
