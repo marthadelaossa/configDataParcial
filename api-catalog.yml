@@ -35,7 +35,7 @@ eureka:
 
 resilience4j.retry:
   instances:
-    service:
+    myService:
       maxAttempts: 3
       waitDuration: 10s
       enableExponentialBackoff: true
@@ -45,7 +45,8 @@ resilience4j.retry:
         - java.io.IOException
 
 resilience4j.circuitbreaker:
-  service:
+ instances:
+    myService:
     clientInscription:
       registerHealthIndicator: true
       slidingWindowSize: 10
