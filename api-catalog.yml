@@ -47,7 +47,6 @@ resilience4j.retry:
 resilience4j.circuitbreaker:
  instances:
     myService:
-    clientInscription:
       registerHealthIndicator: true
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
