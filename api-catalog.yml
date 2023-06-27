@@ -55,4 +55,13 @@ resilience4j.circuitbreaker:
       waitDurationInOpenState: 50s
       failureRateThreshold: 50
       eventConsumerBufferSize: 10
+      
+management:
+  health:
+    circuitbreakers:
+      enabled: 'true'
+  endpoint:
+    health:
+      show-details: always      
+      
 
