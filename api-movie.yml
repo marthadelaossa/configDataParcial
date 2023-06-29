@@ -13,7 +13,7 @@ spring:
     enabled: true  
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/movie-dev
+    url: jdbc:mysql://localhost:3306/movie-dev
     username: usr-movie
     password: pwd-movie
   jpa:
